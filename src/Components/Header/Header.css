@@ -117,7 +117,7 @@
   cursor: pointer;
     text-decoration: underline ;
     color:rgb(203, 156, 247);
-    scale: 1.05;
+    transform:scale(1.05);
 
 }
 
