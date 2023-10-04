@@ -1,9 +1,114 @@
 .h-wrapper{
+    background-color: black;
+    border-bottom: 100px solid ;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    height: 70px;
+    border: 1px solid;
+    border-color: blueviolet;
+  }
+  .h-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
 
-}
-.h-container{
+.search-bar{
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    border: 3px solid rgba(120, 120, 120, 0.374);
+    padding: 0.5red 1rem; 
 
-}
-.h-menu{
+    display: flex;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     
 }
+.search-bar> input{
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 0.5rem;
+}
+
+.dropdown-menu{
+  position: absolute;
+  /* right: 0; */
+  top: 45px;
+  border: 3px solid;
+  border-radius: 2px;
+  border-color: blueviolet;
+  background-color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  width: 120px;
+  }
+
+  .dropdown-menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+  }
+  .menu-trigger:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+}
+  
+  .dropdown-menu.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
+  }
+  .menu-trigger img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #fff;
+  }
+
+  .dropdownItem{
+    display: flex;
+    margin: 10px auto;
+  }
+
+  /* menu div */
+  .h-menu{
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    color: rgb(140, 0, 255);
+    
+    
+}
+.h-menu :hover{
+  cursor: pointer;
+    text-decoration: underline ;
+    color:rgb(203, 156, 247);
+    scale: 1.05;
+
+}
+
+.h-menu {
+  text-decoration:none;
+  
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+/* .h-menu a:hover{
+  color: blue;
+} */

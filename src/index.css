@@ -16,10 +16,10 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-a {
+/* a {
   color: inherit;
   text-decoration: none;
-}
+} */
 .paddings {
   padding: 1.5rem;
 }
@@ -104,9 +104,16 @@ a {
 
 @media (max-width: 640px) {
   .primaryText {
+    color:#849cfa;
     font-size: 1.5rem;
   }
   .orangeText {
     font-size: 1.2rem;
+  }
+  .secondaryText{
+    /* color: rgb(155, 243, 243); */
+    font-family: sans-serif;
+    color: cyan
+    
   }
 }
