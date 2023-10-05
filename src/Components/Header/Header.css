@@ -1,132 +1,150 @@
-.h-wrapper{
+@font-face {
+  font-family: 'Cooper-Black';
+  src: url('/src/assets/Cooper-Black Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Orator-Bold';
+  src: url('/src/assets/Orator Bold.ttf') format('truetype');
+}
+
+.cooper-black {
+  font-family: 'Cooper-Black';
+  background: url('/src/assets/texture.png');
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  font-weight: bold;
+  animation: glow 2s ease-in-out infinite alternate;
+  /* color: white; */
+  font-size: 115%;
+  align-items: center;
+  margin-right: 5px;
+}
+
+
+@keyframes glow {
+  0% {
+    text-shadow: 0px 0px 5px transparent;
+  }
+  100% {
+    text-shadow: 0px 0px 10px white;
+  }
+}
+
+.orator-bold {
+  font-family: 'Orator-Bold';
+  color: white;
+  font-size: 85%;
+  position: relative;
+  top: -3px;
+  padding: 5px 5px;
+}
+
+.h-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
     background-color: black;
     border-bottom: 100px solid ;
     box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
     height: auto;
-    border: 1px solid;
-    border-color: blueviolet;
-  }
-  .h-container{
-    max-width: 1200px;
+    border-bottom: 0.32rem solid;
+    border-bottom-color: grey;
+}
+
+.h-container{
+    max-width:unset;
     margin: auto;
+    border-bottom: 0.4rem groove rgb(179, 179, 179);
     display: flex;
     justify-content:space-between;
-    align-items: center;
+    align-items:center;
     padding: 10px 20px;
-  }
+}
 
-  .h-container img{
+.logo-text-container {
+  display: flex;
+  align-items:start;
+}
+
+.h-container img{
     display: flex;
     align-items: center;
     height: 75px;;
-    transition: transform  0.3s ease-in-out;
-  } .h-container img:hover {
-    transform: scale(1.2) rotate(-180deg); /* Grow logo when hovered */
-  }
+    transition: transform 0.3s ease-in-out;
+}
 
-  .h-container .primaryText {
+.h-container img:hover {
+    transform: scale(1.2) rotate(-180deg); /* Grow logo when hovered */
+}
+
+.h-container .primaryText {
     margin: 10px;
-    size: auto;
-  } @media screen and (max-width: 680px) {
-    .h-container .primaryText {
-      display: none;
-    }
-  }
+}
+
+@media screen and (max-width: 680px) {
+   .h-container .primaryText {
+       display: none;
+   }
+}
 
 .search-bar{
-    width: 400px;
-    background-color: white;
-    border-radius: 5px;
-    border: 3px solid rgba(120, 120, 120, 0.374);
-    padding: 0.5red 1rem; 
-
-    display: flex;
-    row-gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
+   width: 400px;
+   background-color: white;
+   border-radius: 5px;
+   border: 3px solid rgba(120,120,120,0.374);
+   padding: .5rem; 
+   display:flex;
+   row-gap:2rem;
+   justify-content:center;
+   align-items:center;
+   flex-wrap:wrap;   
 }
+
 .search-bar> input{
-    border: none;
-    outline: none;
-    width: 100%;
-    margin-left: 0.5rem;
+   border:none;
+   outline:none;
+   width:100%;
+   margin-left:.5rem; 
+}
+
+.h-menu{
+  display:flex;
+  justify-content: space-between;
+  color: #ffffff;
 }
 
 .dropdown-menu{
-  position: absolute;
-  /* right: 0; */
-  top: 45px;
-  border: 3px solid;
-  border-radius: 2px;
-  border-color: blueviolet;
-  background-color: rgb(0, 0, 0);
-  padding: 5px 10px;
-  width: 120px;
-  }
-
-  .dropdown-menu.active{
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transition: var(--speed) ease;
-  }
-  .menu-trigger:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transition: var(--speed) ease;
-}
-  
-  .dropdown-menu.inactive{
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-20px);
-    transition: var(--speed) ease;
-  }
-  .menu-trigger img{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-    background-color: #fff;
-  }
-
-  .dropdownItem{
-    display: flex;
-    margin: 10px auto;
-  }
-
-  /* menu div */
-  .h-menu{
-    font-style: italic;
-    font-weight: bold;
-    display: flex;
-    gap: 15px;
-    cursor: pointer;
-    color: rgb(140, 0, 255);
-    
-    
-}
-.h-menu :hover{
-  cursor: pointer;
-    text-decoration: underline ;
-    color:rgb(203, 156, 247);
-    transform:scale(1.05);
-
+   position:absolute; 
+   top:45px; 
+   border-radius:2px; 
+   border-color:blueviolet; 
+   background-color:black; 
+   padding:.5rem; 
+   width:120px; 
 }
 
-.h-menu {
-  text-decoration:none;
-  
-  padding: 5px 10px;
-  transition: color 0.3s;
+.dropdown-menu.active,
+.menu-trigger:hover .dropdown-menu {
+   opacity:1; 
+   visibility:visible; 
+   transform:translateY(0); 
+   transition:.3s ease; /* I replaced var(--speed) with .3s as --speed is not defined in your CSS */
 }
-/* .h-menu a:hover{
-  color: blue;
-} */
+
+.dropdown-menu.inactive{
+   opacity:.5; /* I changed this to .5 so the menu is still slightly visible when inactive */
+   visibility:hidden; 
+   transform:translateY(-20px); 
+   transition:.3s ease; /* I replaced var(--speed) with .3s as --speed is not defined in your CSS */
+}
+
+.menu-trigger img{
+   position:absolute; 
+   top:.5rem; 
+   right:.5rem; 
+   height:.5rem; 
+   width:.5rem; 
+}
