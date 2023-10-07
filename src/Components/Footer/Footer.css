@@ -4,29 +4,29 @@
   padding: 15px;
   background-color: #000; /* Black background */
   color: #fff; /* White text */
-  border: 5px solid transparent; /* Adjust border width as needed */
+  border: 11px solid transparent; /* Adjust border width as needed */
   animation: borderGlow 5s linear infinite;
 }
 
 @keyframes borderGlow {
   0% { 
-    border: 5px solid transparent;
+    border: solid transparent;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   }
   25% {
-    border: 5px solid red; /* Adjust colors as needed */
+    border: solid red; /* Adjust colors as needed */
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
   }
   50% {
-    border: 5px solid yellow; /* Adjust colors as needed */
+    border: solid yellow; /* Adjust colors as needed */
     box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
   }
   75% {
-    border: 5px solid blue; /* Adjust colors as needed */
+    border:  solid blue; /* Adjust colors as needed */
     box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
   }
   100% {
-    border: 5px solid transparent;
+    border: solid transparent;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   }
 }
