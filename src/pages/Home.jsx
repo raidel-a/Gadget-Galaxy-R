@@ -7,7 +7,7 @@ import Contact from "../Components/Contact/Contact";
 
 function Home() {
   return (
-    <div className="home" style={{ backgroundImage: `url(${BannerImage})` }}>
+    <div className="home" style={{ backgroundImage: `url(${BannerImage})`, backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
       <div className="headingContainer">
         <h1> Gadget Galaxy </h1>
         <p> Find DEALS out of this world </p>
@@ -18,11 +18,11 @@ function Home() {
 
       <div className='dealsContainer'><Deals /></div>
       <div>
-         <Contact />
+        <Contact />
       </div>
-      
+
     </div>
-    
+
   );
 }
 

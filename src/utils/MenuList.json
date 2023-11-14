@@ -1,254 +1,254 @@
 [
-  {
-      "name": "Framework 16",
-      "price": "1200",
-      "detail": "Modular",
-      "image": "src/assets/ProductImages/Laptops/Laptop_10.png",
-      "type": "Laptop",
-      "Deal": false,
-      "Page": "/Laptops"
-  },
-  {
-      "name": "Lenovo Legion Pro",
-      "price": "1050",
-      "detail": "16gb DDR4",
-      "image": "src/assets/ProductImages/Laptops/Laptop_2.png",
-      "type": "Laptop",
-      "Deal": false,
-      "Page": "/Laptops"
-  },
-  {
-      "name": "Huawei MateBook",
-      "price": "1150",
-      "detail": "2-in-1 Notebook",
-      "image": "src/assets/ProductImages/Laptops/Laptop_8.png",
-      "type": "Laptop",
-      "Deal": false,
-      "Page": "/Laptops"
-  },
-  {
-      "name": "HP EliteBook",
-      "price": "1500",
-      "detail": "16gb DDR4",
-      "image": "src/assets/ProductImages/Laptops/Laptop_7.png",
-      "type": "Laptop",
-      "Deal": false,
-      "Page": "/Laptops"
-  },
-  {
-      "name": "Microsoft Surface",
-      "price": "1145",
-      "detail": "14.4\" QHD Touchscreen",
-      "image": "src/assets/ProductImages/Laptops/Laptop_6.png",
-      "type": "Laptop",
-      "Deal": false,
-      "Page": "/Laptops"
-  },
-  {
-      "name": "Asus ZenBook",
-      "price": "1200",
-      "detail": "Intel Core i7",
-      "image": "src/assets/ProductImages/Laptops/Laptop_5.png",
-      "type": "Laptop",
-      "Deal": false,
-      "Page": "/Laptops"
-  },
-  {
-      "name": "ACER NITRO 5",
-      "price": "1200",
-      "detail": "15.6 inch",
-      "image": "src/assets/ProductImages/Laptops/Laptop_4.png",
-      "type": "Laptop",
-      "Deal": true,
-      "Page": "/Laptops"
-  },
-  {
-      "name": "Dell XPS 13",
-      "price": "1700",
-      "detail": "Tele 4k Touchscreen",
-      "image": "src/assets/ProductImages/Laptops/Laptop_3.png",
-      "type": "Laptop",
-      "Deal": false,
-      "Page": "/Laptops"
-  },
-  {
-      "name": "ASUS ROG Laptop",
-      "price": "1400",
-      "detail": "Ram ",
-      "image": "src/assets/ProductImages/Laptops/Laptop_2.png",
-      "type": "Laptop",
-      "Deal": true,
-      "Page": "/Laptops"
-  },
-  {
-      "name": "HP Spectre",
-      "price": "985",
-      "detail": "RAM",
-      "image": "src/assets/ProductImages/Laptops/Laptop_1.png",
-      "type": "Laptop",
-      "Deal": false,
-      "Page": "/Laptops"
-  },
-  {
-      "name": "Headphones",
-      "price": "50",
-      "detail": "Sounds Nice",
-      "image": "src/assets/ProductImages/Headphones/Headphones_1.png",
-      "type": "Accessory",
-      "Deal": false,
-      "Page": "/Accessories"
-  },
-  {
-      "name": "Bose Headphone",
-      "price": "245",
-      "detail": "Heavy Basse",
-      "image": "src/assets/ProductImages/Headphones/Headphones_2.png",
-      "type": "Accessory",
-      "Deal": false,
-      "Page": "/Accessories"
-  },
-  {
-      "name": "AirPods Max",
-      "price": "549",
-      "detail": "High-Fidelity Audio",
-      "image": "src/assets/ProductImages/Headphones/AirpodsMax.png",
-      "type": "Accessory",
-      "Deal": true,
-      "Page": "/Accessories"
-  },
-  {
-      "name": "Beats Studio Pro",
-      "price": "299",
-      "detail": "Noise Cancelling",
-      "image": "src/assets/ProductImages/Headphones/BeatsStudioPro.png",
-      "type": "Accessory",
-      "Deal": false,
-      "Page": "/Accessories"
-  },
-  {
-      "name": "JBL Live 660NC",
-      "price": "199",
-      "detail": "Active Noise Cancelling",
-      "image": "src/assets/ProductImages/Headphones/JBLlive660NC.png",
-      "type": "Accessory",
-      "Deal": false,
-      "Page": "/Accessories"
-  },
-  {
-      "name": "Jlab Studio Pro",
-      "price": "79",
-      "detail": "Wireless On-Ear",
-      "image": "src/assets/ProductImages/Headphones/JlabStudioPro.png",
-      "type": "Accessory",
-      "Deal": false,
-      "Page": "/Accessories"
-  },
-  {
-      "name": "Logitech Zone Vibe 100",
-      "price": "89",
-      "detail": "Wired Headset",
-      "image": "src/assets/ProductImages/Headphones/LogiZoneVibe100.png",
-      "type": "Accessory",
-      "Deal": false,
-      "Page": "/Accessories"
-  },
-  {
-      "name": "SkullCandy Hush",
-      "price": "99",
-      "detail": "Over-Ear Wireless",
-      "image": "src/assets/ProductImages/Headphones/SkullCandyHush.png",
-      "type": "Accessory",
-      "Deal": false,
-      "Page": "/Accessories"
-  },
-  {
-      "name": "Sony WH-1000XM4B",
-      "price": "348",
-      "detail": "Noise Cancelling",
-      "image": "src/assets/ProductImages/Headphones/SonyWH1000XM4B.png",
-      "type": "Accessory",
-      "Deal": true,
-      "Page": "/Accessories"
-  },
-  {
-      "name": "BLU G53",
-      "price": "179",
-      "detail": "Smartphone",
-      "image": "src/assets/ProductImages/Phones/Blu-G53.png",
-      "type": "Phone",
-      "Deal": false,
-      "Page": "/Phones"
-  },
-  {
-      "name": "Boost Moto G",
-      "price": "149",
-      "detail": "Smartphone",
-      "image": "src/assets/ProductImages/Phones/BoostMotoG.png",
-      "type": "Phone",
-      "Deal": false,
-      "Page": "/Phones"
-  },
-  {
-      "name": "Galaxy A03",
-      "price": "129",
-      "detail": "Smartphone",
-      "image": "src/assets/ProductImages/Phones/GalaxyA03.png",
-      "type": "Phone",
-      "Deal": false,
-      "Page": "/Phones"
-  },
-  {
-      "name": "Motorolla G Plus",
-      "price": "229",
-      "detail": "Smartphone",
-      "image": "src/assets/ProductImages/Phones/MotorollaGPlus.png",
-      "type": "Phone",
-      "Deal": false,
-      "Page": "/Phones"
-  },
-  {
-      "name": "OneNote",
-      "price": "279",
-      "detail": "Smartphone",
-      "image": "src/assets/ProductImages/Phones/OneNote.png",
-      "type": "Phone",
-      "Deal": false,
-      "Page": "/Phones"
-  },
-  {
-      "name": "Samsung Flip Z",
-      "price": "1199",
-      "detail": "Foldable Smartphone",
-      "image": "src/assets/ProductImages/Phones/SamsungFlipZ.png",
-      "type": "Phone",
-      "Deal": false,
-      "Page": "/Phones"
-  },
-  {
-      "name": "Pixel 7 Pro",
-      "price": "999",
-      "detail": "Google Smartphone",
-      "image": "src/assets/ProductImages/Phones/Pixel7Pro.png",
-      "type": "Phone",
-      "Deal": false,
-      "Page": "/Phones"
-  },
-  {
-      "name": "iPhone 15",
-      "price": "1000",
-      "detail": "New Camera",
-      "image": "src/assets/ProductImages/Phones/iphone15.png",
-      "type": "Phone",
-      "Deal": true,
-      "Page": "/Phones"
-  },
-  {
-      "name": "Samsung Galaxy",
-      "price": "900",
-      "detail": "Nice Phone",
-      "image": "src/assets/ProductImages/Phones/SamsungGzFold.png",
-      "type": "Phone",
-      "Deal": true,
-      "Page": "/Phones"
-  }
+    {
+        "name": "Framework 16",
+        "price": "1200",
+        "detail": "-16 inch anti-glare matte display\n-2560x1600 Resolution\n-165Hz refresh rate",
+        "image": "src/assets/ProductImages/Laptops/Laptop_10.png",
+        "type": "Laptop",
+        "Deal": false,
+        "Page": "/Laptops"
+    },
+    {
+        "name": "Lenovo Legion Pro",
+        "price": "1050",
+        "detail": "-Intel Core i7-13700HX\n-16gb DDR4\n-Nvidia RTX 4060 (140-watt TGP)",
+        "image": "src/assets/ProductImages/Laptops/Laptop_2.png",
+        "type": "Laptop",
+        "Deal": false,
+        "Page": "/Laptops"
+    },
+    {
+        "name": "Huawei MateBook",
+        "price": "1150",
+        "detail": "-13th Gen Intel® Core™ i7-1360P Processor\n-Intel® Iris® Xᵉ Graphics\n-32 GB / 16 GB",
+        "image": "src/assets/ProductImages/Laptops/Laptop_8.png",
+        "type": "Laptop",
+        "Deal": false,
+        "Page": "/Laptops"
+    },
+    {
+        "name": "HP EliteBook",
+        "price": "1500",
+        "detail": "-Intel HD Graphics 4400\n-4th generation Intel Core Processors\n-16gb DDR4",
+        "image": "src/assets/ProductImages/Laptops/Laptop_7.png",
+        "type": "Laptop",
+        "Deal": false,
+        "Page": "/Laptops"
+    },
+    {
+        "name": "Microsoft Surface",
+        "price": "1145",
+        "detail": "-14.4\" QHD Touchscreen\n-All-day battery life.\n-Multitask like a pro with up to 64GB RAM",
+        "image": "src/assets/ProductImages/Laptops/Laptop_6.png",
+        "type": "Laptop",
+        "Deal": false,
+        "Page": "/Laptops"
+    },
+    {
+        "name": "Asus ZenBook",
+        "price": "1200",
+        "detail": "-Intel Core i7-8565U processor\n-NVIDIA® GeForce® MX150\n-14” LED-backlit FHD",
+        "image": "src/assets/ProductImages/Laptops/Laptop_5.png",
+        "type": "Laptop",
+        "Deal": false,
+        "Page": "/Laptops"
+    },
+    {
+        "name": "ACER NITRO 5",
+        "price": "1200",
+        "detail": "-12th Gen Intel® Core™ i7 processor\n-NVIDIA® GeForce RTX™ 30 Series GPUs\n-15.6\" Screen Size with 165Hz refresh rate.",
+        "image": "src/assets/ProductImages/Laptops/Laptop_4.png",
+        "type": "Laptop",
+        "Deal": true,
+        "Page": "/Laptops"
+    },
+    {
+        "name": "Dell XPS 13",
+        "price": "1700",
+        "detail": "-12th Gen Intel® Core™ i5-1230U\n-Tele 4k Touchscreen\n-Up to 32 GB of RAM",
+        "image": "src/assets/ProductImages/Laptops/Laptop_3.png",
+        "type": "Laptop",
+        "Deal": false,
+        "Page": "/Laptops"
+    },
+    {
+        "name": "ASUS ROG Zephyrus Duo 16",
+        "price": "1400",
+        "detail": "-GeForce RTX™ 3060 Laptop GPU\n-AMD Ryzen™ 9 6980HX\n-16\" Display, Refresh Rate:165Hz",
+        "image": "src/assets/ProductImages/Laptops/Laptop_2.png",
+        "type": "Laptop",
+        "Deal": true,
+        "Page": "/Laptops"
+    },
+    {
+        "name": "HP Spectre x360",
+        "price": "985",
+        "detail": "-Intel® Core™ i5-8250U\n-Intel® UHD Graphics 620\n-13.3\" diagonal FHD IPS WLED-backlit touch screen (1920 x 1080)",
+        "image": "src/assets/ProductImages/Laptops/Laptop_1.png",
+        "type": "Laptop",
+        "Deal": false,
+        "Page": "/Laptops"
+    },
+    {
+        "name": "Headphone",
+        "price": "50",
+        "detail": "-Stylish and ergonomic design for comfort\n-Advanced noise-cancelling technology for immersive audio.",
+        "image": "src/assets/ProductImages/Headphones/Headphones_1.png",
+        "type": "Accessory",
+        "Deal": false,
+        "Page": "/Accessories"
+    },
+    {
+        "name": "Bose Headphone",
+        "price": "245",
+        "detail": "Signature Bose sound quality for a rich audio experience\n-Lightweight and foldable design for portability.",
+        "image": "src/assets/ProductImages/Headphones/Headphones_2.png",
+        "type": "Accessory",
+        "Deal": false,
+        "Page": "/Accessories"
+    },
+    {
+        "name": "AirPods Max",
+        "price": "549",
+        "detail": "-High-fidelity audio with Apple's custom-designed driver.\n-Adaptive EQ for an immersive listening experience.\n-Active Noise Cancellation.",
+        "image": "src/assets/ProductImages/Headphones/AirpodsMax.png",
+        "type": "Accessory",
+        "Deal": true,
+        "Page": "/Accessories"
+    },
+    {
+        "name": "Beats Studio Pro",
+        "price": "299",
+        "detail": "-Powerful bass and dynamic sound signature.\n-Over-ear design for noise isolation.\n-Apple's H1 chip for seamless device connectivity.",
+        "image": "src/assets/ProductImages/Headphones/BeatsStudioPro.png",
+        "type": "Accessory",
+        "Deal": false,
+        "Page": "/Accessories"
+    },
+    {
+        "name": "JBL Live 660NC",
+        "price": "199",
+        "detail": "-Adaptive noise-cancelling for personalised audio.\n-Comfortable over-ear design for extended wear.\n-Ambient Aware technology.",
+        "image": "src/assets/ProductImages/Headphones/JBLlive660NC.png",
+        "type": "Accessory",
+        "Deal": false,
+        "Page": "/Accessories"
+    },
+    {
+        "name": "Jlab Studio Pro",
+        "price": "79",
+        "detail": "-Customizable sound with EQ settings\n-Comfortable ear cushions for extended listening.\n-Bluetooth connectivity for wireless convenience",
+        "image": "src/assets/ProductImages/Headphones/JlabStudioPro.png",
+        "type": "Accessory",
+        "Deal": false,
+        "Page": "/Accessories"
+    },
+    {
+        "name": "Logitech Zone Vibe 100",
+        "price": "89",
+        "detail": "-Designed for virtual collaboration and conferencing.\n-Zone Vibe technology for active noise-canceling during calls.",
+        "image": "src/assets/ProductImages/Headphones/LogiZoneVibe100.png",
+        "type": "Accessory",
+        "Deal": false,
+        "Page": "/Accessories"
+    },
+    {
+        "name": "SkullCandy Hush",
+        "price": "99",
+        "detail": "-Sleek and minimalist design.\n-Built-in microphone for hands-free calls.\n-Rapid charge feature for quick battery replenishment.",
+        "image": "src/assets/ProductImages/Headphones/SkullCandyHush.png",
+        "type": "Accessory",
+        "Deal": false,
+        "Page": "/Accessories"
+    },
+    {
+        "name": "Sony WH-1000XM4B",
+        "price": "348",
+        "detail": "-Industry-leading noise-cancelling technology.\n-High-resolution audio for exceptional sound quality.",
+        "image": "src/assets/ProductImages/Headphones/SonyWH1000XM4B.png",
+        "type": "Accessory",
+        "Deal": true,
+        "Page": "/Accessories"
+    },
+    {
+        "name": "BLU G53",
+        "price": "179",
+        "detail": "-High-performance processor\n-Large, vibrant display\n-Long-lasting battery life",
+        "image": "src/assets/ProductImages/Phones/Blu-G53.png",
+        "type": "Phone",
+        "Deal": false,
+        "Page": "/Phones"
+    },
+    {
+        "name": "Boost Moto G",
+        "price": "149",
+        "detail": "-5G connectivity\n-Water-resistant design\n-TurboPower™ charging",
+        "image": "src/assets/ProductImages/Phones/BoostMotoG.png",
+        "type": "Phone",
+        "Deal": false,
+        "Page": "/Phones"
+    },
+    {
+        "name": "Galaxy A03",
+        "price": "129",
+        "detail": "-Dual-camera setup\n-Sleek design with a large display\n-Expandable storage",
+        "image": "src/assets/ProductImages/Phones/GalaxyA03.png",
+        "type": "Phone",
+        "Deal": false,
+        "Page": "/Phones"
+    },
+    {
+        "name": "Motorolla G Plus",
+        "price": "229",
+        "detail": "-Advanced camera system with optical zoom\n-TurboPower™ charging\n-Responsive and vivid display",
+        "image": "src/assets/ProductImages/Phones/MotorollaGPlus.png",
+        "type": "Phone",
+        "Deal": false,
+        "Page": "/Phones"
+    },
+    {
+        "name": "OneNote",
+        "price": "279",
+        "detail": "-Fluid AMOLED display with high refresh rate\n-Powerful performance with a top-tier processor",
+        "image": "src/assets/ProductImages/Phones/OneNote.png",
+        "type": "Phone",
+        "Deal": false,
+        "Page": "/Phones"
+    },
+    {
+        "name": "Samsung Flip Z",
+        "price": "1199",
+        "detail": "-Foldable design\n-Multi-tasking capabilities with split-screen functionality\n-High-quality camera system",
+        "image": "src/assets/ProductImages/Phones/SamsungFlipZ.png",
+        "type": "Phone",
+        "Deal": false,
+        "Page": "/Phones"
+    },
+    {
+        "name": "Pixel 7 Pro",
+        "price": "999",
+        "detail": "-AI-powered camera features\n-Fast and efficient performance\n-Pixel-specific software features",
+        "image": "src/assets/ProductImages/Phones/Pixel7Pro.png",
+        "type": "Phone",
+        "Deal": false,
+        "Page": "/Phones"
+    },
+    {
+        "name": "iPhone 15",
+        "price": "1000",
+        "detail": "-Cutting-edge A-series chip\n-Innovative camera system\n-Enhanced durability with premium build materials",
+        "image": "src/assets/ProductImages/Phones/iphone15.png",
+        "type": "Phone",
+        "Deal": true,
+        "Page": "/Phones"
+    },
+    {
+        "name": "Samsung Galaxy",
+        "price": "900",
+        "detail": "-Curved-edge Infinity Display\n-S Pen support\n-Multilens camera system",
+        "image": "src/assets/ProductImages/Phones/SamsungGzFold.png",
+        "type": "Phone",
+        "Deal": true,
+        "Page": "/Phones"
+    }
 ]

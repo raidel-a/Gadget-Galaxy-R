@@ -6,7 +6,7 @@ import '../styles/Menu.css';
 
 function Menu() {
   return (
-    <div className="menu" style={{ backgroundImage: `url(${BannerImage})` }}>
+    <div className="menu" style={{ backgroundImage: `url(${BannerImage})`, backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
       <h1 className="menuTitle">Products</h1>
 
       <div className="menuList">

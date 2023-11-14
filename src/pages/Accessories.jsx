@@ -7,7 +7,7 @@ import '../styles/Menu.css';
 function Laptops() {
   const accItems = MenuList.filter(menuItem => menuItem.type === 'Accessory');
   return (
-    <div className="menu" style={{ backgroundImage: `url(${BannerImage})` }}>
+    <div className="menu" style={{ backgroundImage: `url(${BannerImage})`, backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
       <h1 className="menuTitle">Accessories</h1>
 
       <div className="menuList">
