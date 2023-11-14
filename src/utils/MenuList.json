@@ -6,7 +6,8 @@
         "image": "src/assets/ProductImages/Laptops/Laptop_10.png",
         "type": "Laptop",
         "Deal": false,
-        "Page": "/Laptops"
+        "Page": "/Laptops",
+        "url": "https://frame.work/products/laptop16-diy-amd-7040"
     },
     {
         "name": "Lenovo Legion Pro",
@@ -15,7 +16,8 @@
         "image": "src/assets/ProductImages/Laptops/Laptop_2.png",
         "type": "Laptop",
         "Deal": false,
-        "Page": "/Laptops"
+        "Page": "/Laptops",
+        "url": "https://frame.work/products/laptop16-diy-amd-7040"
     },
     {
         "name": "Huawei MateBook",
@@ -24,7 +26,8 @@
         "image": "src/assets/ProductImages/Laptops/Laptop_8.png",
         "type": "Laptop",
         "Deal": false,
-        "Page": "/Laptops"
+        "Page": "/Laptops",
+        "url": "https://consumer.huawei.com/en/laptops/matebook-e-2022/"
     },
     {
         "name": "HP EliteBook",
@@ -33,7 +36,8 @@
         "image": "src/assets/ProductImages/Laptops/Laptop_7.png",
         "type": "Laptop",
         "Deal": false,
-        "Page": "/Laptops"
+        "Page": "/Laptops",
+        "url": "https://www.hp.com/us-en/shop/mdp/elite-352503--1/hp-elitebook-655-3074457345617692173--1"
     },
     {
         "name": "Microsoft Surface",
@@ -42,7 +46,8 @@
         "image": "src/assets/ProductImages/Laptops/Laptop_6.png",
         "type": "Laptop",
         "Deal": false,
-        "Page": "/Laptops"
+        "Page": "/Laptops",
+        "url": "https://www.microsoft.com/en-us/d/surface-laptop-studio/8srdf62swkpf?activetab=pivot:overviewtab"
     },
     {
         "name": "Asus ZenBook",
@@ -51,7 +56,8 @@
         "image": "src/assets/ProductImages/Laptops/Laptop_5.png",
         "type": "Laptop",
         "Deal": false,
-        "Page": "/Laptops"
+        "Page": "/Laptops",
+        "url": "https://www.amazon.com/ASUS-Zenbook-Touchscreen-i7-13700H-Thunderbolts/dp/B0CDD8DRT7?th=1"
     },
     {
         "name": "ACER NITRO 5",
@@ -60,7 +66,8 @@
         "image": "src/assets/ProductImages/Laptops/Laptop_4.png",
         "type": "Laptop",
         "Deal": true,
-        "Page": "/Laptops"
+        "Page": "/Laptops",
+        "url": "https://www.amazon.com/Acer-i5-9300H-GeForce-Keyboard-AN515-54-5812/dp/B086KJBKDW?th=1"
     },
     {
         "name": "Dell XPS 13",
@@ -69,7 +76,8 @@
         "image": "src/assets/ProductImages/Laptops/Laptop_3.png",
         "type": "Laptop",
         "Deal": false,
-        "Page": "/Laptops"
+        "Page": "/Laptops",
+        "url": "https://www.dell.com/en-us/shop/dell-laptops/xps-13-laptop/spd/xps-13-9315-laptop"
     },
     {
         "name": "ASUS ROG Zephyrus Duo 16",
@@ -78,7 +86,8 @@
         "image": "src/assets/ProductImages/Laptops/Laptop_2.png",
         "type": "Laptop",
         "Deal": true,
-        "Page": "/Laptops"
+        "Page": "/Laptops",
+        "url": "https://www.amazon.com/ROG-Zephyrus-G14-7-5800HS-Graphics/dp/B0CCVP1XR3/ref=sr_1_16?keywords=asus%2Brog%2Blaptop&qid=1699652160&sr=8-16&th=1"
     },
     {
         "name": "HP Spectre x360",
@@ -87,7 +96,8 @@
         "image": "src/assets/ProductImages/Laptops/Laptop_1.png",
         "type": "Laptop",
         "Deal": false,
-        "Page": "/Laptops"
+        "Page": "/Laptops",
+        "url": "https://www.amazon.com/HP-Spectre-i7-12700H-14-Core-Win11Pro/dp/B0B8TLX7YL"
     },
     {
         "name": "Headphone",
@@ -96,7 +106,8 @@
         "image": "src/assets/ProductImages/Headphones/Headphones_1.png",
         "type": "Accessory",
         "Deal": false,
-        "Page": "/Accessories"
+        "Page": "/Accessories",
+        "url": "https://www.amazon.com/Skullcandy-Over-Ear-Headphones-Microphone-Bluetooth/dp/B0CBLLJTTN/ref=sr_1_14?c=ts&keywords=Over-Ear+Headphones&qid=1699652334&refinements=p_36%3A1253504011&s=aht&sr=1-14&ts_id=12097479011"
     },
     {
         "name": "Bose Headphone",
@@ -105,7 +116,8 @@
         "image": "src/assets/ProductImages/Headphones/Headphones_2.png",
         "type": "Accessory",
         "Deal": false,
-        "Page": "/Accessories"
+        "Page": "/Accessories",
+        "url": "https://www.bose.com/p/headphones/bose-quietcomfort-45-headphones/QC45-HEADPHONEARN.html"
     },
     {
         "name": "AirPods Max",
@@ -114,7 +126,8 @@
         "image": "src/assets/ProductImages/Headphones/AirpodsMax.png",
         "type": "Accessory",
         "Deal": true,
-        "Page": "/Accessories"
+        "Page": "/Accessories",
+        "url": "https://www.apple.com/shop/buy-airpods/airpods-max"
     },
     {
         "name": "Beats Studio Pro",
@@ -123,7 +136,8 @@
         "image": "src/assets/ProductImages/Headphones/BeatsStudioPro.png",
         "type": "Accessory",
         "Deal": false,
-        "Page": "/Accessories"
+        "Page": "/Accessories",
+        "url": "https://www.beatsbydre.com/headphones/studio-pro-wireless"
     },
     {
         "name": "JBL Live 660NC",
@@ -132,7 +146,8 @@
         "image": "src/assets/ProductImages/Headphones/JBLlive660NC.png",
         "type": "Accessory",
         "Deal": false,
-        "Page": "/Accessories"
+        "Page": "/Accessories",
+        "url": "https://www.jbl.com/over-ear-headphones/LIVE660NC-.html"
     },
     {
         "name": "Jlab Studio Pro",
@@ -141,7 +156,8 @@
         "image": "src/assets/ProductImages/Headphones/JlabStudioPro.png",
         "type": "Accessory",
         "Deal": false,
-        "Page": "/Accessories"
+        "Page": "/Accessories",
+        "url": "https://www.jlab.com/products/studio-pro-wireless-over-ear-headphones"
     },
     {
         "name": "Logitech Zone Vibe 100",
@@ -150,7 +166,8 @@
         "image": "src/assets/ProductImages/Headphones/LogiZoneVibe100.png",
         "type": "Accessory",
         "Deal": false,
-        "Page": "/Accessories"
+        "Page": "/Accessories",
+        "url": "https://www.logitech.com/en-us/products/headsets/zone-vibe-100-wireless.981-001257.html"
     },
     {
         "name": "SkullCandy Hush",
@@ -159,7 +176,8 @@
         "image": "src/assets/ProductImages/Headphones/SkullCandyHush.png",
         "type": "Accessory",
         "Deal": false,
-        "Page": "/Accessories"
+        "Page": "/Accessories",
+        "url": ""
     },
     {
         "name": "Sony WH-1000XM4B",
@@ -168,7 +186,8 @@
         "image": "src/assets/ProductImages/Headphones/SonyWH1000XM4B.png",
         "type": "Accessory",
         "Deal": true,
-        "Page": "/Accessories"
+        "Page": "/Accessories",
+        "url": "https://www.skullcandy.com/hesh-anc-wireless-headphones/"
     },
     {
         "name": "BLU G53",
@@ -177,7 +196,8 @@
         "image": "src/assets/ProductImages/Phones/Blu-G53.png",
         "type": "Phone",
         "Deal": false,
-        "Page": "/Phones"
+        "Page": "/Phones",
+        "url": "https://www.bestbuy.com/site/blu-g53-64gb-unlocked-pearl/6544769.p?skuId=6544769"
     },
     {
         "name": "Boost Moto G",
@@ -186,7 +206,8 @@
         "image": "src/assets/ProductImages/Phones/BoostMotoG.png",
         "type": "Phone",
         "Deal": false,
-        "Page": "/Phones"
+        "Page": "/Phones",
+        "url": "https://www.boostmobile.com/shop/moto-g-5g-000620.html"
     },
     {
         "name": "Galaxy A03",
@@ -195,7 +216,8 @@
         "image": "src/assets/ProductImages/Phones/GalaxyA03.png",
         "type": "Phone",
         "Deal": false,
-        "Page": "/Phones"
+        "Page": "/Phones",
+        "url": "https://www.amazon.com/Simple-Mobile-Samsung-Galaxy-Black/dp/B0BBXD7S5R?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=ATVPDKIKX0DER"
     },
     {
         "name": "Motorolla G Plus",
@@ -204,7 +226,8 @@
         "image": "src/assets/ProductImages/Phones/MotorollaGPlus.png",
         "type": "Phone",
         "Deal": false,
-        "Page": "/Phones"
+        "Page": "/Phones",
+        "url": "https://www.motorola.com/we/smartphones-moto-g-5g-plus/p?skuId=183"
     },
     {
         "name": "OneNote",
@@ -213,7 +236,8 @@
         "image": "src/assets/ProductImages/Phones/OneNote.png",
         "type": "Phone",
         "Deal": false,
-        "Page": "/Phones"
+        "Page": "/Phones",
+        "url": "https://www.amazon.com/OnePlus-Midnight-Unlocked-Smartphone-BE2011/dp/B07XM8GDWC?th=1"
     },
     {
         "name": "Samsung Flip Z",
@@ -222,7 +246,8 @@
         "image": "src/assets/ProductImages/Phones/SamsungFlipZ.png",
         "type": "Phone",
         "Deal": false,
-        "Page": "/Phones"
+        "Page": "/Phones",
+        "url": "https://www.samsung.com/us/smartphones/galaxy-z-flip5/buy/galaxy-z-flip5-256gb-unlocked-sm-f731uzgaxaa/"
     },
     {
         "name": "Pixel 7 Pro",
@@ -231,7 +256,8 @@
         "image": "src/assets/ProductImages/Phones/Pixel7Pro.png",
         "type": "Phone",
         "Deal": false,
-        "Page": "/Phones"
+        "Page": "/Phones",
+        "url": "https://store.google.com/us/config/pixel_7_pro?pli=1&hl=en-US&selections=eyJwcm9kdWN0RmFtaWx5IjoiY0dsNFpXeGZOMTl3Y204PSJ9"
     },
     {
         "name": "iPhone 15",
@@ -240,7 +266,8 @@
         "image": "src/assets/ProductImages/Phones/iphone15.png",
         "type": "Phone",
         "Deal": true,
-        "Page": "/Phones"
+        "Page": "/Phones",
+        "url": "https://www.apple.com/shop/buy-iphone/iphone-15"
     },
     {
         "name": "Samsung Galaxy",
@@ -249,6 +276,7 @@
         "image": "src/assets/ProductImages/Phones/SamsungGzFold.png",
         "type": "Phone",
         "Deal": true,
-        "Page": "/Phones"
+        "Page": "/Phones",
+        "url": "https://www.samsung.com/us/smartphones/galaxy-s23/buy/galaxy-s23-plus-512gb-unlocked-sm-s916uliexaa/"
     }
 ]
