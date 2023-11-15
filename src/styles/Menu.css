@@ -20,7 +20,7 @@ body {
 .menu .menuTitle {
   font-family: Trebuchet MS, sans-serif;
   font-size: 60px;
-  color: rgb(111, 60, 127)
+  color: rgb(111, 60, 127);
   color: rgb(111, 60, 127)
 }
 
@@ -105,7 +105,7 @@ body {
   /* Include the border size in the image width */
 }
 
-.menuItem h1 {
+
 .menuItem h1 {
   text-align: right;
   border: 10px solid transparent;
@@ -113,7 +113,7 @@ body {
   /* text-shadow: rgba(144, 144, 144, 0.804); */
 }
 
-.menuItem .prodDetails {
+
 .menuItem .prodDetails {
   background-color: transparent;
 
