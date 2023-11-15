@@ -1,202 +1,279 @@
-.h-wrapper{
-    background-color: black;
-    border-bottom: 100px solid ;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
-    height: 70px;
-    border: 1px solid;
-    border-color: blueviolet;
-  }
+/* .h-wrapper {
+  z-index: 2;
+} */
 
-  .h-container{
-    max-width: 145vh;
-    margin: auto;
-    display: flex;
-    justify-content:space-between;
-    padding: 10px 20px;
-    gap: 10px;
-    
-  }
-  .h-container a{
-    display: flex;
-    /*align-items: center;
-    justify-content: center;*/
-    text-decoration: none;
-  }
-
-/*.search-bar{
-    width: 400px;
-    background-color: white;
-    border-radius: 5px;
-    border: 3px solid rgba(120, 120, 120, 0.374);
-    /*padding: 0.5red 1rem; 
-
-    display: flex;
-    row-gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
-}*/
-
-/*.search-bar> input{
-    border: none;
-    outline: none;
-    width: 100%;
-    margin-left: 0.5rem;
-}*/
-
-.searchInput{
-    display: flex;
+.h-container {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.05);
+  height: 75px;
+  /* z-index: 1; */
+  overflow: visible;
+  max-width: 100vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-blend-mode: exclusion;
+  background: rgba(0, 0, 0, 0.4);
+  overflow: visible;
 }
 
-.search{
-    margin-top: 10px;
-}
-.search input{
-    background-color: white;
-    border: 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    font-size: 15px;
-    width: 400px;
-    display: flex;
-    padding-left: 5px;
-}
-
-input:focus{
-  outline: none;
-}
-
-.searchIcon{
-    display: grid;
-    place-items: center;
-    background-color: white;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.searchIcon:focus{
-  color: black;
-}
-
-.searchResult{
-  border-radius: 5px;
-  margin-top: 5px;
-  background-color: white;
-  height: fit-content;
-  max-height: 130px;
-  box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
-  overflow: hidden;
-  overflow-y: auto;
-  position: relative;
-  z-index: 100;
-}
-
-.searchResult::-webkit-scrollbar{
-  display: none;
-}
-
-.searchResult .dataItem{
-  width: 100%;
-  height: 32px;
+.h-container a {
   display: flex;
   align-items: center;
-  color: black;
   text-decoration: none;
+  color: white;
+  background-color: transparent;
 }
 
-.searchResult a:hover{
+.logo-image {
+  width: 50px;
+  height: 50px;
+  transition: ease-in-out 0.6s;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  background-color: lightgrey;
 }
 
-.dataItem p{
-  margin-left: 10px;
+.logo-image:hover {
+  transform: rotate(180deg);
 }
 
-.dropdown-menu{
+.pagesDropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 3s, opacity 0.5s linear;
+  display: none;
   position: absolute;
-  /* right: 0; */
-  top: 100%;
-  border: 3px solid;
-  border-radius: 2px;
-  border-color: blueviolet;
-  background-color: rgb(0, 0, 0);
-  padding: 5px 10px;
-  width: 120px;
-  z-index: 100;
-  }
-
-  .dropdown-menu.active{
-    opacity: 1;
-    z-index: 100;
-    visibility: visible;
-    transform: translateY(0);
-    transition: var(--speed) ease;
-  }
-  .menu-trigger:hover .dropdown-menu {
-    opacity: 1;
-    z-index: 100;
-    visibility: visible;
-    transform: translateY(0);
-    transition: var(--speed) ease;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.689);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* z-index: 3; */
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  list-style-type: none;
 }
-  
-  .dropdown-menu.inactive{
-    opacity: 0;
-    z-index: 100;
-    visibility: hidden;
-    transform: translateY(-20px);
-    transition: var(--speed) ease;
-  }
-  .menu-trigger img{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-    background-color: #fff;
-  }
 
-  .menu-trigger{
-    max-height: 26px;
-  }
-
-  .dropdownItem{
-    z-index: 100;
-    display: flex;
-    margin: 10px auto;
-  }
-
-  /* menu div */
-  .h-menu{
-    top: 4px;
-    z-index: 100;
-    font-style: italic;
-    font-weight: bold;
-    display: flex;
-    gap: 15px;
-    cursor: pointer;
-    color: rgb(140, 0, 255);
-    position: relative;
-    max-height: 40px;
+.dropdown-menu.active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
 }
-.h-menu :hover{
-  cursor: pointer;
-    text-decoration: underline ;
-    color:rgb(203, 156, 247);
-    transform: scale(1.05);
 
+.dropdown-menu a {
+  color: #333;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.pagesDropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .h-menu {
-  text-decoration:none;
+  top: 4px;
+  /* z-index: 1; */
+  font: 1em sans-serif oblique;
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
   padding: 5px 10px;
   transition: color 0.3s;
 }
-/* .h-menu a:hover{
-  color: blue;
-} */
+
+.h-menu h3 {
+  padding-inline: 0.5em;
+  text-decoration: none;
+  background: linear-gradient(#2125fba1 0 0) no-repeat
+    calc(200% - var(--i, 0) * 100%) 100% / 200%
+    calc(100% * var(--i, 0) + 0.08em);
+  transition: 0.3s calc(var(--i, 0) * 0.3s),
+    background-position 0.3s calc(0.3s - calc(var(--i, 0) * 0.3s));
+}
+
+.h-container:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.h-menu h3:hover {
+  --i: 1;
+}
+
+.h-menu ul {
+  padding-bottom: 10px;
+}
+
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  padding: 1.5rem;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 1);
+  z-index: 3;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-blend-mode: exclusion;
+  background: rgba(255, 255, 255, 0.071);
+}
+
+.mobile-menu a {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: #000000 0 0 5px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  background-color: #1b1b1bb7;
+}
+
+@media only screen and (max-width: 1100px) {
+  .h-container h1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 811px) {
+  .mobile-menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .h-menu {
+    display: none;
+  }
+}
+
+.search {
+  text-decoration: none;
+  /* display: flexbox; */
+  /* position: absolute; */
+  top: 70px;
+  flex-direction: column;
+  padding: 1.5rem;
+  /* z-index: 4 !important */
+}
+
+.searchInputs {
+  /* margin-top: 105px; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-decoration: none;
+}
+
+.search input {
+  background-color: white;
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
+  width: 300px;
+}
+
+.searchIcon {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+  border-radius: 2px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  box-shadow:0px 0px 50px rgb(0, 0, 0);
+}
+
+input:focus {
+  outline: none;
+}
+.searchIcon svg {
+  font-size: 25px;
+}
+
+.dataResult {
+  border-top: 2px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  position: absolute;
+  width: 300px;
+  /* height: 200px; */
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* overflow: hidden; */
+  /* overflow-y: auto; */
+  z-index: 3;
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.dataItem p {
+  margin-left: 10px;
+}
+.dataResult a {
+  text-decoration: none;
+}
+
+.dataResult a:hover {
+  background-color: lightgrey;
+}
+
+.searchIcon #clearBtn {
+  cursor: pointer;
+}
+
+.primary-text {
+  margin: 0.5rem;
+  font-size: 2rem;
+}

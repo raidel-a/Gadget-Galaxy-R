@@ -8,7 +8,7 @@ function Laptops() {
 
   const laptopItems = MenuList.filter(menuItem => menuItem.type === 'Laptop');
   return (
-    <div className="menu" style={{ backgroundImage: `url(${BannerImage})`, backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+    <div className="menu">
       <h1 className="menuTitle">Laptops</h1>
 
       <div className="menuList">
@@ -20,6 +20,7 @@ function Laptops() {
               price={menuItem.price}
               name={menuItem.name}
               detail={menuItem.detail}
+
 
             />
           );

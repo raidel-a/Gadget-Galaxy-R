@@ -4,9 +4,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Menu";
 import Laptops from "./pages/Laptops";
 import Phones from "./pages/Phones";
-import Accessories from "./pages/Accessories";
-
- 
+import Accessories from "./pages/Accessories"; 
 import ScrollToTop from "./utils/ScrollToTop";
 
 
