@@ -21,6 +21,7 @@ function Laptops() {
               name={menuItem.name}
               detail={menuItem.detail}
 
+
             />
           );
         })}
