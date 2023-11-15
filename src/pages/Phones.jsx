@@ -15,6 +15,7 @@ function Laptops() {
         {phoneItems.map((menuItem, key) => {
           return (
             <MenuItem
+              id = {menuItem.id}
               key={key}
               image={menuItem.image}
               price={menuItem.price}

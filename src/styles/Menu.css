@@ -20,8 +20,7 @@ body {
 .menu .menuTitle {
   font-family: Trebuchet MS, sans-serif;
   font-size: 60px;
-  color: rgb(111, 60, 127)
-  color: rgb(111, 60, 127)
+  color: rgb(111, 60, 127);
 }
 
 .menuList {
@@ -30,6 +29,26 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+}
+/* ADD TO CART BUTTON STYLING */
+
+.menuItem button{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 1px 2px;
+  margin-left: .4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.menuItem button:hover {
+  background-color: #9f29a1;
+  color: plum;
 }
 
 @keyframes fadeIn {
@@ -105,7 +124,7 @@ body {
   /* Include the border size in the image width */
 }
 
-.menuItem h1 {
+
 .menuItem h1 {
   text-align: right;
   border: 10px solid transparent;
@@ -114,11 +133,8 @@ body {
 }
 
 .menuItem .prodDetails {
-.menuItem .prodDetails {
   background-color: transparent;
-
 }
-
 
 .menuItem h2,
 .menuItem p {
@@ -137,4 +153,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
