@@ -1,116 +1,146 @@
 .home {
-  width: 100%;
-  min-height: 30vh;
   display: flex;
-  justify-content: center;
   align-items: left;
   flex-direction: column;
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: sans-serif; */
+  position: relative;
+  /* overflow: hidden; */
+  /* z-index: auto; */
 }
 
+#gradient-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  max-width: 100%;
+  z-index: -100;
+  --gradient-color-1: #000d55; 
+  --gradient-color-2: #000000; 
+  --gradient-color-3: #390e53;  
+  --gradient-color-4: #4e1f02;
+}
 
 .headingContainer {
-  width: 100%;
-  /* margin-left: 30px; */
-  /* min-height: 40vh; */
-  background: linear-gradient(#070306, #9f29a1);
+  /* height: max-content; */
+  z-index: -1;
 }
 
 .headingContainer h1 {
+  padding: 1.5rem;
   justify-content: center;
   align-items: center;
-  font-size: 90px;
-  height: 60px;
-  font-weight: 50;
-  color: black;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-  transition: text-shadow 0.5s ease-in-out;
-  padding-bottom: 1.2em;
-}
-.headingContainer h1 :hover {
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  font-size: 4rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 20px rgba(200, 200, 30);
 }
 
 .headingContainer p {
-  padding: 0px;
-  font-size: 30px;
-  font-weight: lighter;
-  color: black;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-  transition: text-shadow 0.5s ease-in-out;
-  padding-bottom: 1rem;
-}
-h1:hover {
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  padding-left: 2rem;
+  font-size: 1.3rem;
+  color: rgb(210, 210, 210);
+  text-shadow: 0 0 10px rgb(200, 200, 30);
 }
 
-.headingContainer button {
-  color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.buttonCont {
+  display: flex;
   justify-content: center;
-  background-color: #121619;
-  height: 50px;
-  width: 180px;
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
+  align-items: center;
+  align-content: center;
+  margin: 4rem;
 }
-
-.headingContainer button:hover {
-  background-color: #07090a;
-  cursor: pointer;
-  transition: 0.3s ease-in;
+.buttonCont button {
+  background-color: transparent;
+  position: relative;
+  padding: 25px 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #03e9f4;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: .5s;
+  overflow: hidden;
+  border: none;
 }
-
-.dealsContainer{
-  /* box-shadow: 0em -1em 1em black; */
-}
-
-@media only screen and (max-width: 650px) {
-  .home,
-  .headingContainer {
-    /* justify-content: center; */
-    /* align-items: center; */
-    align-content: center;
-  }
-
-  .headingContainer {
-    margin-left: 0px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* background-color: #121619; */
-    color: white;
-  }
-
-  .headingContainer h1 {
-    font-size: 40px;
-    height: 30px;
-    color: white;
-  }
-
-  .headingContainer p {
-    font-size: 30px;
-    color: white;
-  }
-
-  .headingContainer button {
-    background-color: white;
-    color: #121619;
-    margin-bottom: 30px;
-  }
-
-  .headingContainer button:hover {
-    background-color: rgb(225, 225, 225);
-    color: #121619;
-  }
-}
+  .buttonCont button:hover {
+    background-color: #03e9f4;
+   color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 
+               0 0 25px #03e9f4, 
+               0 0 50px #03e9f4,
+               0 0 200px #03e9f4;
+   /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
+   }
+    .buttonCont button span {
+      position: absolute;
+      display: block;
+    }
+    .buttonCont button span:nth-child(1) {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #03e9f4);
+      animation: animate1 1s infinite;
+    }
+    @keyframes animate1 {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+    .buttonCont button span:nth-child(2) {
+      top: -100%;
+      right: 0;
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, #03e9f4);
+      animation: animate2 1s infinite;
+      animation-delay: .25s
+    }
+    @keyframes animate2 {
+      0% {
+        top: -100%;
+      }
+      100% {
+        top: 100%;
+      }
+    }
+    .buttonCont button span:nth-child(3) {
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(270deg, transparent, #03e9f4);
+      animation: animate3 1s infinite;
+      animation-delay: .5s
+    }
+    @keyframes animate3 {
+      0% {
+        right: -100%;
+      }
+      100% {
+        right: 100%;
+      }
+    }
+    .buttonCont button span:nth-child(4) {
+      bottom: -100%;
+      left: 0;
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, #03e9f4);
+      animation: animate4 1s infinite;
+      animation-delay: .75s
+    }
+    @keyframes animate4 {
+      0% {
+        bottom: -100%;
+      }
+      100% {
+        bottom: 100%;
+      }
+    }

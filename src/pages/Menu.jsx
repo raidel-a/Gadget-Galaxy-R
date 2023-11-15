@@ -1,12 +1,11 @@
 import React from 'react';
 import MenuList from "../utils/MenuList.json";
 import MenuItem from '../utils/MenuItem';
-import BannerImage from '../assets/pixelGalaxy.jpg';
 import '../styles/Menu.css';
 
 function Menu() {
   return (
-    <div className="menu" style={{ backgroundImage: `url(${BannerImage})` }}>
+    <div className="menu">
       <h1 className="menuTitle">Products</h1>
 
       <div className="menuList">

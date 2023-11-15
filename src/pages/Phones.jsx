@@ -8,7 +8,7 @@ function Laptops() {
 
   const phoneItems = MenuList.filter(menuItem => menuItem.type === 'Phone');
   return (
-    <div className="menu" style={{ backgroundImage: `url(${BannerImage})` }}>
+    <div className="menu">
       <h1 className="menuTitle">Phones</h1>
 
       <div className="menuList">

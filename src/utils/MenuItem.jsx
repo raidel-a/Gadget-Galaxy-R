@@ -6,7 +6,7 @@ function MenuItem({ name, price, detail, image }) {
       <div style={{ backgroundImage: `url(${image})` }}> </div>
       <h1>${price}</h1>
       <h2>{name}</h2>
-      <p>{detail}</p>
+      <p style={{ whiteSpace: 'pre-line' }}>{detail}</p>
     </div>
   );
 }

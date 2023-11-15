@@ -1,99 +1,152 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Header.css";
-// import DropdownMenu from './DropdownMenu';
-import { useState } from "react";
-import { Link } from 'react-router-dom';
-import productData from "../../utils/MenuList.json"
-import SearchIcon from "@mui/icons-material/Search"
-import logo from '../../assets/gg_Logo.png';
+import { Link } from "react-router-dom";
+import productData from "../../utils/MenuList.json";
+import MenuIcon from "@mui/icons-material/Menu";
+import logo from "../../assets/gg_Logo.png";
+import SearchIcon from "@mui/icons-material/Search";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Header = () => {
-  // const dropdownOptions = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
-  const [open, setOpen] = useState(false);
+  const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const dropdownTimerRef = useRef(null);
+
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuVisible(!isMobileMenuVisible);
+  };
+
+  const handleDropdownToggle = () => {
+    setIsDropdownVisible(!isDropdownVisible);
+  };
+
+  const handleDropdownMouseEnter = () => {
+    clearTimeout(dropdownTimerRef.current);
+  };
+
+  const handleDropdownMouseLeave = () => {
+    dropdownTimerRef.current = setTimeout(() => {
+      setIsDropdownVisible(false);
+    }, 2000);
+  };
+
+  useEffect(() => {
+    return () => {
+      clearTimeout(dropdownTimerRef.current);
+    };
+  }, []);
+
   return (
     <section className="h-wrapper">
       <div className="h-container">
-      <Link to="/">
-          <img src={logo} 
-          aria-label=""  
-          style={{ width: '50px', height: '50px' }}/>
-          <h1 className="primaryText">GadgetGalaxy</h1>
-      </Link>
-      <SearchBar placeholder="Search a product" data={productData}/>
-        {/* ${}is string interpolation and otar bhitore conditional statement */}
+        
+        <Link to="/">
+          <img
+            src={logo}
+            aria-label="Gadget Galaxy Logo"
+            className="logo-image"
+          />
+          <h1 className="primary-text">GadgetGalaxy</h1>
+        </Link>
 
-        <div className="h-menu ">
-          {/* <DropdownMenu options={dropdownOptions} /> */}
-          <div className="menu-trigger" onClick={() => setOpen(!open)}>
-            <h3>Products</h3>
-            <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
-              <ul>
-                <Link to="/products"><DropdownItem text={"Products"} /></Link>
-                <Link to="/laptops"><DropdownItem text={"Laptop"} /> </Link>
-                <Link to="/phones"><DropdownItem text={"Phones"} /> </Link>
-                <Link to="/accessories"><DropdownItem text={"Accessories"} /> </Link>
-              </ul>
-            </div>
+        <SearchBar className="searchBar" placeholder="Search" data={productData} />
+
+        <div className="h-menu">
+          <div
+            className="pagesDropdown"
+            onMouseEnter={handleDropdownMouseEnter}
+            onMouseLeave={handleDropdownMouseLeave}
+          >
+            <h3 onClick={handleDropdownToggle}>Products</h3>
+            <ul className={`dropdown-menu ${isDropdownVisible ? "active" : "inactive"}`}>
+              <li><Link to="/products">All Products</Link></li>
+              <li><Link to="/laptops">Laptops</Link></li>
+              <li><Link to="/phones">Phones</Link></li>
+              <li><Link to="/accessories">Accessories</Link></li>
+            </ul>
           </div>
 
-          <h3>Contact Us</h3>
-          <h3>Shopping Cart</h3>
+          <Link to="/">
+            <h3>Contact Us</h3>
+          </Link>
+          <Link to="/Cart">
+            <h3>Cart</h3>
+          </Link>
+        </div>
+
+        <div className="mobile-menu-icon" onClick={handleMobileMenuToggle}>
+          <MenuIcon />
         </div>
       </div>
+
+      {isMobileMenuVisible && (
+        <nav className="mobile-menu">
+          <Link to="/products">Products</Link>
+          <Link to="/laptops">Laptops</Link>
+          <Link to="/phones">Phones</Link>
+          <Link to="/accessories">Accessories</Link>
+        </nav>
+      )}
     </section>
   );
 };
 
-function DropdownItem(props) {
+
+function SearchBar({ placeholder, data }) {
+  const [filteredData, setFilteredData] = useState([]);
+  const [wordEntered, setWordEntered] = useState("");
+ 
+
+  const handleFilter = (event) => {
+    const searchWord = event.target.value;
+    setWordEntered(searchWord);
+    const newFilter = data.filter((value) => {
+      return value.name.toLowerCase().includes(searchWord.toLowerCase());
+    });
+
+    if (searchWord === "") {
+      setFilteredData([]);
+    } else {
+      setFilteredData(newFilter);
+    }
+  };
+
+  const clearInput = () => {
+    setFilteredData([]);
+    setWordEntered("");
+  };
+
   return (
-    <li className="dropdownItem">
-      {/* <img src = {props.img}></img> */}
-      {props.text}
-    </li>
+    <div className="search">
+      <div className="searchInputs">
+        <input
+          type="text"
+          placeholder={placeholder}
+          value={wordEntered}
+          onChange={handleFilter}
+        />
+        <div className="searchIcon">
+          {filteredData.length === 0 ? (
+            <SearchIcon />
+          ) : (
+            <CloseIcon id="clearBtn" onClick={clearInput} />
+          )}
+        </div>
+      </div>
+      {filteredData.length != 0 && (
+        <div className="dataResult">
+          {filteredData.slice(0, 5).map((value, key) => {
+            return (
+              <a className="dataItem" href={value.link} key={key} target="_blank">
+                {/* key={key} */}
+                <p>{value.name} </p>
+              </a>
+            );
+          })}
+        </div>
+      )}
+    </div>
   );
 }
 
-function SearchBar({placeholder, data}) {
-  const [filteredSearch, setFilteredSearch] = useState([])
-
-  const handleFilter = (event) =>{
-    // handleFilter is turned into an eventlistener, which takes in
-    // the value of the input (searchWord) and compares it all the names in the menulist.json
-    // then returns the ones that have the same letters
-    const searchWord = event.target.value
-    const newFilter = data.filter((value)=>{
-      return value.name.toLowerCase().includes(searchWord.toLowerCase());
-    })
-    if (searchWord === ""){
-      setFilteredSearch([])
-    } else{
-      setFilteredSearch(newFilter)
-    }
-    
-  }
-  /*Result when calling the searchbar function*/
-  return (
-    <div className="search">
-      <div className="searchInput">
-        {/*Onchange event listener which detects when something is changed in the input, then as a result it calls handleFilter*/}
-        <input type="text" placeholder={placeholder} onChange={handleFilter}/>
-        <a className="searchIcon" href="/products">
-          <SearchIcon/>
-        </a>
-      </div>
-      {/* if the input is not 0, then we display all the products (searchResult)*/}
-      {filteredSearch.length != 0 &&
-        <div className="searchResult">
-          {filteredSearch.slice(0,8).map((value, key) =>{
-            return <a className="dataItem" href={value.Page}> 
-              <p>
-                {value.name}
-              </p>
-            </a>
-          })}
-        </div>
-      }
-    </div>
-  )
-}
 export default Header;

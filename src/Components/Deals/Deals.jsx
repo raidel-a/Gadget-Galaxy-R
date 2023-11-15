@@ -5,16 +5,37 @@ import "../Deals/Deals.css";
 import MenuList from "../../utils/MenuList.json";
 
 const Deals = () => {
+  // Shuffle function to randomize array order
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
 
-    const hasDeal = MenuList.filter(menuItem => menuItem.Deal === true);
+  const hasDeal = shuffleArray(MenuList.filter((menuItem) => menuItem.Deal === true));
 
   return (
     <section className="d-wrapper">
       <div className="d-container">
         <div className="d-head flexColStart">
-          <span className="orangeText">Deals</span>
+          <span className="titleDeals">Deals</span>
         </div>
-        <Swiper slidesPerView={2} spaceBetween={0}>
+        <Swiper
+          spaceBetween={80}
+          breakpoints={{
+            720: {
+              slidesPerView: 2,
+            },
+            1100: {
+              slidesPerView: 3,
+            },
+            1400: {
+              slidesPerView: 4,
+            },
+          }}
+        >
           <SliderButtons />
           {hasDeal.map((card, i) => (
             <SwiperSlide key={i} className={`slide-${i}`}>

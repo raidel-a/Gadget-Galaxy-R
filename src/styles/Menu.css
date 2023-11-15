@@ -1,3 +1,12 @@
+
+body {
+  background-image: url("../assets/pixelGalaxy.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .menu {
   width: 100%;
   height: auto;
@@ -6,17 +15,31 @@
   align-items: center;
   flex-direction: column;
 }
+
 .menu .menuTitle {
   font-family: Trebuchet MS, sans-serif;
   font-size: 60px;
+  color: rgb(111, 60, 127)
 }
 
 .menuList {
   width: auto;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* MENU ITEM STYLING */
@@ -24,12 +47,17 @@
 .menuItem {
   border-radius: 15px;
   width: 300px;
-  height: 350px;
+  height: 400px;
   margin: 20px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  color: black;
+  box-shadow: blueviolet;
+  color: rgb(11, 10, 11);
   background: rgba(169, 169, 169, 0.523);
+  opacity: 0;
+  /* start with 0 opacity */
+  animation: fadeIn 0.5s ease-out forwards;
 }
+
+/* box shadow when you hover card*/
 .menuItem:hover {
   box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.8);
   transition: 0.3s ease-in;
@@ -45,21 +73,24 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  border: calc(0.2 * 10vmin) solid transparent; /* Add dynamic border size */
-  box-sizing: border-box; /* Include the border size in the image width */
+  border: calc(0.2 * 10vmin) solid transparent;
+  /* Add dynamic border size */
+  box-sizing: border-box;
+  /* Include the border size in the image width */
 }
 
-.menuItem h1{
+.menuItem h1 {
   text-align: right;
   border: 10px solid transparent;
 
   /* text-shadow: rgba(144, 144, 144, 0.804); */
 }
 
-.menuItem .prodDetails{
+.menuItem .prodDetails {
   background-color: transparent;
 
 }
+
 .menuItem h2,
 .menuItem p {
   text-align: left;
@@ -77,3 +108,4 @@
     grid-template-columns: 1fr;
   }
 }
+
