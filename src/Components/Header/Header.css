@@ -46,6 +46,7 @@
 }
 
 .dropdown-menu {
+  
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 3s, opacity 0.5s linear;
@@ -54,7 +55,7 @@
   left: 0;
   background-color: rgba(255, 255, 255, 0.689);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 5;
+  /* z-index: 5; */
   border-radius: 5px;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -69,7 +70,7 @@
 
 .dropdown-menu a {
   color: #333;
-  padding: 12px 16px;
+  padding: 5px 16px;
   display: block;
   text-decoration: none;
   transition: background-color 0.3s ease;
