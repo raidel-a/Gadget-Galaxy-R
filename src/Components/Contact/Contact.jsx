@@ -21,7 +21,7 @@ const Contact = () => {
 
         {/* left side */}
         <div className="flexColStart c-left">
-          <span className="orangeText">Our Contact</span>
+          <span className="contact-main">Our Contact</span>
           <span className="primaryText">Easy to Contact us </span>
           <span className="secondaryText">
             We are always happy to help and provide the best service
