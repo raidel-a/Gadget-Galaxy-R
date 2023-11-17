@@ -12,7 +12,7 @@ function Footer() {
           <p>/src</p>
         </a>
       </div>
-      <div className="contactUs"><a href="">Contact Us</a></div>
+      <div className="contactUs"><a href="/">Contact Us</a></div>
       <p> &copy; 2023 GadgetGalaxy </p>
     </div>
   );
