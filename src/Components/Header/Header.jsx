@@ -7,6 +7,7 @@ import logo from "../../assets/gg_Logo.png";
 import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 
+
 const Header = () => {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -67,7 +68,7 @@ const Header = () => {
           </div>
 
           <Link to="/">
-            <h3>Contact Us</h3>
+            <h3>Contact</h3>
           </Link>
           <Link to="/Cart">
             <h3>Cart</h3>
@@ -85,6 +86,7 @@ const Header = () => {
           <Link to="/laptops">Laptops</Link>
           <Link to="/phones">Phones</Link>
           <Link to="/accessories">Accessories</Link>
+          <Link to="/cart">Cart</Link>
         </nav>
       )}
     </section>
@@ -137,7 +139,9 @@ function SearchBar({ placeholder, data }) {
         <div className="dataResult">
           {filteredData.slice(0, 5).map((value, key) => {
             return (
-              <a className="dataItem" href={value.link} key={key} target="_blank">
+              <a className="dataItem" href={value.Page} key={key} 
+              // target="_blank"
+              >
                 {/* key={key} */}
                 <p>{value.name} </p>
               </a>

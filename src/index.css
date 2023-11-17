@@ -67,17 +67,17 @@
 }
 
 .primaryText {
-  color: #76f7f3;
+  /* color: #76f7f3; */
   font-weight: bold;
   font-size: 2rem;
 }
 
 .secondaryText {
-  color: rgb(19, 192, 255);
+  /* color: rgb(19, 192, 255); */
   font-size: 0.9rem;
 }
 .orangeText {
-  color: rgb(140, 25, 142);
+  /* color: rgb(140, 25, 142); */
   font-size: 2.5rem;
   font-weight: 800;
 }
@@ -104,16 +104,67 @@
 
 @media (max-width: 640px) {
   .primaryText {
-    color:#849cfa;
+    /* color:#849cfa; */
     font-size: 1.5rem;
   }
   .orangeText {
     font-size: 1.8rem;
   }
-  .secondaryText{
+  /* .secondaryText{ */
     /* color: rgb(155, 243, 243); */
-    font-family: sans-serif;
-    color: cyan
+    /* font-family: sans-serif; */
+    /* color: cyan */
     
-  }
+  /* } */
 }
+
+@font-face {
+  font-family: 'BitMap';
+  src: url(./fonts/Bitmap/BitmapFontPack/PPMondwest-Regular.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+  @font-face {
+    font-family: 'BitMap';
+    src: url(./fonts/Bitmap/BitmapFontPack/PPNeueBit-Bold.otf);
+    font-weight: normal;
+    font-style: bold;
+  }
+
+@font-face {
+  font-family: 'FiraCode';
+  src: url(./fonts/FiraCode/ttf/FiraCode-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+  @font-face {
+   font-family: 'FiraCode';
+    src: url(./fonts/FiraCode/ttf/FiraCode-Bold.ttf);
+    font-weight: normal;
+    font-style: bold;
+  }
+  @font-face{
+    font-family: 'FiraCode';
+    src: url(./fonts/FiraCode/ttf/FiraCode-SemiBold.ttf);
+    font-weight: normal;
+    font-style: semibold;
+  }
+  @font-face{
+    font-family: 'FiraCode';
+    src: url(./fonts/FiraCode/ttf/FiraCode-Light.ttf);
+    font-weight: normal;
+    font-style: light;
+  }
+
+@font-face {
+  font-family: 'OffBit';
+  src: url(./fonts/OffBit/ttf/OffBitTrial-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+  @font-face {
+    font-family: 'OffBit';
+    src: url(./fonts/OffBit/ttf/OffBitTrial-DotBold.ttf);
+    font-weight: normal;
+    font-style: bold;
+  }

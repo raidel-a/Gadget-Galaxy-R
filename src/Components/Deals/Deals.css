@@ -1,113 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
-
-.d-container{
-    overflow: hidden;
-    position: relative;
-    width:100%;
-    background: transparent;
-    /* background: linear-gradient(#9f29a1, #4718d4); */
-    /* linear-gradient(#070306, ); */
-    padding: 1rem;
-    
+.d-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: transparent;
+  /* background: linear-gradient(#9f29a1, #4718d4); */
+  /* linear-gradient(#070306, ); */
+  padding: 1rem;
 }
-.d-head{
-  margin-bottom: 2rem;  
+.d-head {
+  margin-bottom: 0.5rem;
 }
 
-.d-card{
-    gap: 0.5rem;
-    padding: 1.4rem;
-    border-radius: 10px;
-    max-width: max-content;
+.d-card {
+  gap: 0.5rem;
+  padding: 1.4rem;
+  border-radius: 10px;
+  max-width: max-content;
+  margin: 0 auto;
+  transition: all 300ms ease-in-out;
+}
+.d-card > img {
+    display: flex;
     margin: 0 auto;
-    transition: all 300ms ease-in-out;
-    
-}
-.d-card>img{
-    width: 15em;
-    height: 15em;
-    object-fit: contain;
-    /* height: 200px; */
-    
-    /* max-width: 15rem; */
+  width: 15em;
+  height: 15em;
+  object-fit: contain;
+  /* height: 200px; */
+
+  /* max-width: 15rem; */
 }
 /* Apply styles to the first two slides */
 
+.d-card > :nth-child(2) {
+  transform: scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.d-card > :nth-child(3) {
+  font-size: 1.5rem;
+}
+.d-card > :nth-child(4) {
+  font-size: 0.8rem;
+  width: 15rem;
+}
+.d-card:hover {
+  transform: scale(1.025);
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(153, 171, 239, 0.46) 217.91%
+  );
+  /* hover korle je zoom er jei background color hoi ota sheta */
 
+  box-shadow: 0px 72px 49px -51px rgba(178, 192, 249, 0.21);
+}
+.swiper-horizontal {
+  overflow: visible;
+}
+.d-buttons-container {
+  /* position: inherit; */
+  margin-top: 10px;
+  gap: 1.5rem;
+}
+.d-buttons {
+  position: absolute;
 
-.d-card>:nth-child(2){
-    transform: scale(1.2);
-    font-size: 1.2rem;
-    font-weight: 600;
+  align-items: center;
 }
-.d-card>:nth-child(3){
-    font-size: 1.5rem;
+.d-buttons-container button {
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  color: rgb(79, 88, 170);
+  border: none;
+  border-radius: 5px;
+  background: rgba(58, 58, 249, 0.3);
+  background: linear-gradient(#8441411c, #fca7a7, #8441411c);
+  cursor: pointer;
 }
-.d-card>:nth-child(4){
-    font-size: 0.8rem;
-    width: 15rem;
+.d-buttons-container button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.75rem black);
 }
-.d-card:hover{
-    transform:scale(1.025);
-    cursor: pointer;
-    background: linear-gradient(
-        180deg, 
-        rgba(255, 255, 255, 0) 0%,
-        rgba(153, 171, 239, 0.46) 217.91%
-    ); 
-    /* hover korle je zoom er jei background color hoi ota sheta */
-
-        box-shadow: 0px 72px 49px -51px rgba(178, 192, 249, 0.21);
-
-
-}
-.swiper-horizontal{
-    overflow: visible;
-}
-.d-buttons-container{
-    /* position: inherit; */
-    margin-top: 10px;
-    gap: 1.5rem;
-    
-   
-   
-}
-.d-buttons{
-    position: absolute;
-    
-    align-items: center;  
-}
-.d-buttons-container button{
-    font-size: 1.2rem;
-    padding: 0.5rem 0.8rem;
-    color: rgb(79, 88, 170);
-    border: none;
-    border-radius: 5px;
-    background: rgba(58, 58, 249, 0.3);
-    background:  linear-gradient(#8441411c, #fca7a7, #8441411c);
-    cursor:  pointer;
-
-}
-.d-buttons-container button:hover{
-    transform:scale(1.2);
-    cursor: pointer;
-    filter:  drop-shadow(0 0 0.75rem black);
-
-}
-.d-price-text{
-    
-        color: rgb(11, 198, 255);
-        font-size: 0.9rem;
-      
+.d-price-text {
+  font-family: "FireCode";
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(11, 198, 255);
+  font-size: 0.9rem;
 }
 
 .titleDeals {
-    font: 700 4em 'Bitter', serif;
-    top: 0px;
-    left: 0px;
-    margin: 0;
-    padding: 10px;
-    color: #fff;
-    text-shadow: 0 0 35px #ff005b;
- } 
+  font-family: "FiraCode";
+  font-style: bold;
+  font-size: 3rem;
+  text-decoration: underline;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  text-shadow: 0 0 35px #ff005b;
+}
 
+.d-container:hover .titleDeals{
+  text-decoration: underline #ff005b;
+}

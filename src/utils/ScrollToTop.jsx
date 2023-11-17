@@ -5,11 +5,12 @@ import DoubleArrowUp from '@mui/icons-material/KeyboardDoubleArrowUp';
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isRotated, setIsRotated] = useState(false);
   const location = useLocation();
 
   // Show button when page is scrolled upto given distance
   const toggleVisibility = () => {
-    if (window.scrollY > 500) {
+    if (window.scrollY > 100) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -23,6 +24,7 @@ const ScrollToTopButton = () => {
       top: 0,
       behavior: "smooth"
     });
+    setIsRotated(!isRotated); // Toggle rotation state on click
   };
 
   useEffect(() => {
@@ -39,8 +41,8 @@ const ScrollToTopButton = () => {
 
   return (
     isVisible && (
-      <button onClick={scrollToTop} className="scroll-to-top">
-        <DoubleArrowUp />
+      <button onClick={scrollToTop} className={`scroll-to-top ${isRotated ? 'rotate' : ''}`}>
+        <DoubleArrowUp className="arrow-up-icon" />
       </button>
     )
   );
