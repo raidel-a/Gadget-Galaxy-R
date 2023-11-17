@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "../Deals/Deals.css";
 import MenuList from "../../utils/MenuList.json";
+import ArrowCircleLeftTwoToneIcon from '@mui/icons-material/ArrowCircleLeftTwoTone';
+import ArrowCircleRightTwoToneIcon from '@mui/icons-material/ArrowCircleRightTwoTone';
 
 const Deals = () => {
   // Shuffle function to randomize array order
@@ -42,8 +44,8 @@ const Deals = () => {
               <div className="flexColStart d-card">
                 <img src={card.image} alt="home" />
                 <span className="secondaryText d-price">
-                  <span style={{ color: "orange" }}>$</span>
-                  <span>{card.price}</span>
+                  <span style={{ color: "green" }}>$</span>
+                  <span stlye={{ color: "white" }}>{card.price}</span>
                 </span>
 
                 <span className="primaryText">{card.name}</span>
@@ -63,8 +65,8 @@ const SliderButtons = () => {
   const swiper = useSwiper();
   return (
     <div className="flexCenter d-buttons-container">
-      <button onClick={() => swiper.slidePrev()}>&lt;</button>
-      <button onClick={() => swiper.slideNext()}>&gt;</button>
+      <ArrowCircleLeftTwoToneIcon size="" onClick={() => swiper.slidePrev()}>&lt;</ArrowCircleLeftTwoToneIcon>
+      <ArrowCircleRightTwoToneIcon className="muiArrow" onClick={() => swiper.slideNext()}>&gt;</ArrowCircleRightTwoToneIcon>
     </div>
   );
 };
