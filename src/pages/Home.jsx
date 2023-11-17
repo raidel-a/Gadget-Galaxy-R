@@ -22,7 +22,7 @@ function Home() {
       <canvas id="gradient-canvas" data-transition-in />
       <div className="headingContainer">
         <h1> Gadget Galaxy </h1>
-        <p> Find DEALS out of this world </p>
+        <p> Find DEALS Out of This World </p>
       </div>
       <div className="buttonCont">
         <Link to="/products">
