@@ -52,7 +52,7 @@
   transition: visibility 0s 3s, opacity 0.5s linear;
   display: none;
   position: absolute;
-  left: 0;
+  top: 2rem;
   background-color: rgba(255, 255, 255, 0.689);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   /* z-index: 5; */
@@ -96,6 +96,7 @@
 }
 
 .h-menu h3 {
+
   padding-inline: 0.5em;
   text-decoration: none;
   background: linear-gradient(#2125fba1 0 0) no-repeat
@@ -123,6 +124,7 @@
   padding-bottom: 10px;
   list-style-type: none;
 }
+.h3 .con
 
 .mobile-menu-icon {
   display: none;
@@ -170,11 +172,16 @@
   background-color: #1b1b1bb7;
   transform: scale(1.5);
 }
-
+@media only screen and (max-width: 100000px) {
+  .mobile-menu-icon {
+    display: none;
+  }  
+}
 @media only screen and (max-width: 1100px) {
   .h-container h1 {
     display: none;
   }
+  
 }
 
 @media only screen and (max-width: 811px) {

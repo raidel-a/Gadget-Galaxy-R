@@ -84,7 +84,7 @@ const Header = () => {
           </div>
 
           <ScrollLink onClick={handleClick} to="contact" spy={true} smooth={true} offset={-70} duration={0}>
-        <div className="contactUs"><h3>Contact Us</h3></div>
+        <h3>Contact Us</h3>
       </ScrollLink>
           <Link to="/Cart">
             <h3>Cart</h3>
