@@ -14,7 +14,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="socialMedia">
-        <a href="https://github.com/aulindoraiyan/Gadget-Galaxy">
+        <a href="https://github.com/raihven/Gadget-Galaxy-R">
           <GitHubIcon />
           <h2>/src</h2>
         </a>
