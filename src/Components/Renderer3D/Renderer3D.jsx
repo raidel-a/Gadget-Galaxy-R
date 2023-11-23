@@ -7,7 +7,8 @@ const Model = () => {
   const gltf = useLoader(
     GLTFLoader,
     "/assets/models/apple_iphone_15_pro_max_black/scene.gltf"
-  );
+    // "/assets/poly7.glb"
+    );
   return (
     <>
       <primitive position={[0, 0, 0]} object={gltf.scene} scale={3} />

@@ -18,6 +18,11 @@ const Deals = () => {
 
   const hasDeal = shuffleArray(MenuList.filter((menuItem) => menuItem.Deal === true));
 
+  // Function to handle clicking on a swiper slide
+  const handleSlideClick = (url) => {
+    window.location.href = url;
+  };
+
   return (
     <section className="d-wrapper">
       <div className="d-container">
@@ -40,12 +45,12 @@ const Deals = () => {
         >
           <SliderButtons />
           {hasDeal.map((card, i) => (
-            <SwiperSlide key={i} className={`slide-${i}`}>
+            <SwiperSlide key={i} className={`slide-${i}`} onClick={() => handleSlideClick(card.url)}>
               <div className="flexColStart d-card">
                 <img src={card.image} alt="home" />
                 <span className="secondaryText d-price">
                   <span style={{ color: "green" }}>$</span>
-                  <span stlye={{ color: "white" }}>{card.price}</span>
+                  <span style={{ color: "white" }}>{card.price}</span>
                 </span>
 
                 <span className="primaryText">{card.name}</span>

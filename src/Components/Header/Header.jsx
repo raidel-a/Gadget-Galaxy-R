@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import productData from "../../utils/MenuList.json";
@@ -8,7 +8,16 @@ import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 
 
+import { Link as ScrollLink } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
+
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/?scrollToContact=true');
+  };
+
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const dropdownTimerRef = useRef(null);
@@ -40,7 +49,6 @@ const Header = () => {
   return (
     <section className="h-wrapper">
       <div className="h-container">
-        
         <Link to="/">
           <img
             src={logo}
@@ -50,7 +58,11 @@ const Header = () => {
           <h1 className="primary-text">GadgetGalaxy</h1>
         </Link>
 
-        <SearchBar className="searchBar" placeholder="Search" data={productData} />
+        <SearchBar
+          className="searchBar"
+          placeholder="Search"
+          data={productData}
+        />
 
         <div className="h-menu">
           <div
@@ -59,7 +71,11 @@ const Header = () => {
             onMouseLeave={handleDropdownMouseLeave}
           >
             <h3 onClick={handleDropdownToggle}>Products</h3>
-            <ul className={`dropdown-menu ${isDropdownVisible ? "active" : "inactive"}`}>
+            <ul
+              className={`dropdown-menu ${
+                isDropdownVisible ? "active" : "inactive"
+              }`}
+            > 
               <li><Link to="/products">All Products</Link></li>
               <li><Link to="/laptops">Laptops</Link></li>
               <li><Link to="/phones">Phones</Link></li>
@@ -67,9 +83,9 @@ const Header = () => {
             </ul>
           </div>
 
-          <Link to="/">
-            <h3>Contact</h3>
-          </Link>
+          <ScrollLink onClick={handleClick} to="contact" spy={true} smooth={true} offset={-70} duration={0}>
+        <div className="contactUs"><h3>Contact Us</h3></div>
+      </ScrollLink>
           <Link to="/Cart">
             <h3>Cart</h3>
           </Link>
@@ -81,23 +97,28 @@ const Header = () => {
       </div>
 
       {isMobileMenuVisible && (
-        <nav className="mobile-menu">
-          <Link to="/products">Products</Link>
-          <Link to="/laptops">Laptops</Link>
-          <Link to="/phones">Phones</Link>
-          <Link to="/accessories">Accessories</Link>
-          <Link to="/cart">Cart</Link>
-        </nav>
-      )}
+  <nav className="mobile-menu">
+    <ul>
+      <li><Link onClick={handleMobileMenuToggle} to="/">Home</Link></li>
+      <li><Link onClick={handleMobileMenuToggle} to="/products">Products</Link></li>
+      <li><Link onClick={handleMobileMenuToggle} to="/laptops">Laptops</Link></li>
+      <li><Link onClick={handleMobileMenuToggle} to="/phones">Phones</Link></li>
+      <li><Link onClick={handleMobileMenuToggle} to="/accessories">Accessories</Link></li>
+      <li><Link onClick={handleMobileMenuToggle} to="/cart">Cart</Link></li>
+      <li><ScrollLink onClick={() => {handleClick(); handleMobileMenuToggle();}} to="contact" spy={true} smooth={true} offset={-70} duration={0}>
+        Contact Us
+      </ScrollLink></li>
+    </ul>
+  </nav>
+)}
+
     </section>
   );
 };
 
-
 function SearchBar({ placeholder, data }) {
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
- 
 
   const handleFilter = (event) => {
     const searchWord = event.target.value;
@@ -139,8 +160,11 @@ function SearchBar({ placeholder, data }) {
         <div className="dataResult">
           {filteredData.slice(0, 5).map((value, key) => {
             return (
-              <a className="dataItem" href={value.Page} key={key} 
-              // target="_blank"
+              <a
+                className="dataItem"
+                href={value.url}
+                key={key}
+                // target="_blank"
               >
                 {/* key={key} */}
                 <p>{value.name} </p>

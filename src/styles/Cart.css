@@ -4,8 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
   }
   
   .cartItem {
@@ -65,12 +64,15 @@
   }
   .menuTitle{
     padding-top: 1rem;
+    color: white;
+    text-shadow: black 0 0 10px;
   }
   .emptyCart{
     padding: 1rem;
+    color: rgb(206, 206, 206);
+    text-shadow: rgb(0, 0, 0) 0 0 20px;
   }
   .subtotalText{
     font-size:1.5rem;
   }
-  
   
